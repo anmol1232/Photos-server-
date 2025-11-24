@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Prediction for Women - Contact Us</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="highlight"><a href="/predict">Predict</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About Us</a></li>
+                <li class="active"><a href="/contact">Contact Us</a></li>
+                <li><a href="/dataset">Dataset</a></li>
+                <li><a href="/visualization">Visualization</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you! Send us your email, and we'll get back to you soon.</p>
+        
+        <form id="contact-form" action="/contact" method="POST">  <!-- Placeholder action; update to your email handler route -->
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" placeholder="Type your email here" required>
+            
+            <button type="submit">Send</button>
+        </form>
+        
+        <div id="contact-result"></div>  <!-- Placeholder for success/error messages -->
+        
+        <!-- <p>For urgent inquiries, call us at (123) 456-7890 or visit 123 Health St, Wellness City, USA.</p> -->
+    </main>
+
+    <footer>
+        <h3>Explore Our Features</h3>
+        <ul>
+            <li><a href="/predict">Predict</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+            <li><a href="/dataset">Dataset</a></li>
+            <li><a href="/visualization">Visualization</a></li>
+        </ul>
+        <p>&copy; 2025 Diabetes Prediction for Women. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Optional: Handle form submission with JavaScript (shows a message without reloading)
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = document.getElementById('email').value;
+            if (email) {
+                document.getElementById('contact-result').innerText = `Thank you! We'll contact you at ${email} soon.`;
+                document.getElementById('email').value = '';  // Clear the input
+            } else {
+                document.getElementById('contact-result').innerText = 'Please enter a valid email.';
+            }
+        });
+    </script>
+</body>
+</html>

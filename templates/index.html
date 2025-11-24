@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Prediction for Women - Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- For icons -->
+</head>
+<body>
+    <header>        <nav>
+            <ul>    <li class="highlight"><a href="/predict">Predict</a></li>
+    <li><a href="/">Home</a></li>  <!-- Note: Use '/' for home, not '/index' -->
+    <li><a href="/about">About Us</a></li>
+    <li><a href="/contact">Contact Us</a></li>
+    <li><a href="/dataset">Dataset</a></li>
+    <li><a href="/visualization">Visualization</a></li>
+</ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1><i class="fas fa-heartbeat"></i> Welcome to Diabetes Prediction for Women</h1>
+        <p>Empowering women with data-driven insights for better health. Our tool predicts diabetes risk using the Pima Indians Diabetes Dataset, helping you take proactive steps toward wellness.</p>
+        
+        <h2>What is Diabetes?</h2>
+        <img src="https://raw.githubusercontent.com/anmol1232/Photos-server-/refs/heads/main/Home_1.jpeg" class="center">
+        <p>Diabetes is a chronic condition that affects how your body processes blood sugar (glucose). There are two main types: Type 1 (autoimmune) and Type 2 (often linked to lifestyle). Women are at higher risk due to factors like pregnancy (gestational diabetes), hormonal changes, and PCOS. Early detection is key—symptoms include frequent urination, excessive thirst, fatigue, blurred vision, and slow-healing wounds. Untreated, it can lead to complications like heart disease, kidney issues, and neuropathy.</p>
+        
+        <h2>Why Predict Diabetes for Women?</h2>
+        <img src="https://raw.githubusercontent.com/anmol1232/Photos-server-/refs/heads/main/Home_2.jpeg" class="center">
+        <p>Women face unique risks, such as during pregnancy or menopause. Our model analyzes key health metrics (e.g., glucose, BMI, age) from the Pima dataset to provide personalized risk assessments. This promotes prevention through diet, exercise, and regular check-ups. Remember, this is not a medical diagnosis—consult a healthcare professional for advice.</p>
+        
+        <a href="/predict" class="cta-button" class="center_2" >Get Started with Prediction</a>
+        
+        <!-- <h2>Visual Insights</h2> -->
+        <!-- <div class="image-grid">
+            <figure>
+                <img src="https://picsum.photos/300/200?random=1" alt="Diabetes Awareness Image">
+                <figcaption>Diabetes Awareness Campaign</figcaption>
+            </figure>
+            <figure>
+                <img src="https://picsum.photos/300/200?random=2" alt="Women's Health Photo">
+                <figcaption>Empowering Women's Health</figcaption>
+            </figure>
+            <figure>
+                <img src="https://picsum.photos/300/200?random=3" alt="Data Visualization Example">
+                <figcaption>Data-Driven Insights</figcaption>
+            </figure>
+        </div>
+        <p>These images represent diabetes awareness, women's health, and data-driven insights. (Replace with your own photos for better relevance.)</p> -->
+    </main>
+
+    <footer>
+        <h3>Explore Our Features</h3>
+        <ul>
+            <li><a href="/predict">Predict</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+            <li><a href="/dataset">Dataset</a></li>
+            <li><a href="/visualization">Visualization</a></li>
+        </ul>
+        <p>&copy; 2025 Diabetes Prediction for Women. All rights reserved.</p>
+    </footer>
+</body>
+</html>
